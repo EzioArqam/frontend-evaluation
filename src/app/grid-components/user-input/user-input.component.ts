@@ -3,7 +3,6 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatButton } from '@angular/material/button';
 import { MatFormField, MatInput, MatLabel } from '@angular/material/input';
 import { LimitToTwentyDirective } from '../../directives/limit-to-twenty/limit-to-twenty.directive';
-import { ScriptingErrorHandler } from '../../global-error-handler/error-handler.service';
 import { GridGeneratorService } from '../../services/grid-generator/grid-generator.service';
 import { NotifierService } from '../../services/notifier/notifier.service';
 
@@ -13,7 +12,6 @@ import { NotifierService } from '../../services/notifier/notifier.service';
   imports: [MatInput,MatLabel,MatFormField,ReactiveFormsModule,MatButton,LimitToTwentyDirective],
   templateUrl: './user-input.component.html',
   styleUrl: './user-input.component.scss',
-  providers: [{provide: ErrorHandler, useClass: ScriptingErrorHandler}]
 })
 export class UserInputComponent {
   constructor(private gridGenerator: GridGeneratorService,

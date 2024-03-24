@@ -1,6 +1,5 @@
 import { Component, ErrorHandler, importProvidersFrom } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ScriptingErrorHandler } from '../../global-error-handler/error-handler.service';
 import { GridComponent } from '../grid/grid.component';
 import { UserInputComponent } from '../user-input/user-input.component';
 interface GridData {
@@ -12,7 +11,6 @@ interface GridData {
   imports: [UserInputComponent,GridComponent],
   templateUrl: './main-content-area.component.html',
   styleUrl: './main-content-area.component.scss',
-  providers: [{provide: ErrorHandler, useClass: ScriptingErrorHandler}]
 })
 export class MainContentAreaComponent {
 gridNumbers: number[] = [];
