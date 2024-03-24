@@ -12,11 +12,7 @@ export class GridGeneratorService {
       this.notifierService.showErrorSnackbar("Generated Random Numbers exceeded the allowed limit")
       return [];
     }
-  
-    // Shuffle the numbers to ensure randomness in Latin square construction
     const shuffledNumbers = numbers.slice();
-  
-    // Construct the Latin square
     const matrix: number[][] = [];
     for (let i = 0; i < 4; i++) {
         matrix[i] = [];
