@@ -1,5 +1,4 @@
-import { Component, ErrorHandler, importProvidersFrom } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { Component } from '@angular/core';
 import { GridComponent } from '../grid/grid.component';
 import { UserInputComponent } from '../user-input/user-input.component';
 interface GridData {

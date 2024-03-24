@@ -1,11 +1,10 @@
 <div class="custom-snackbar info-snackbar">
-    <span  matSnackBarLabel>
-        {{this.data}}
-      </span>
-      <span matSnackBarActions>
-        <span style="cursor: pointer;" matSnackBarAction (click)="snackBarRef.dismissWithAction()">
-            <i class="fa fa-times" aria-hidden="true"></i>
-        </span>
-      </span>
-    </div>
-      
+  <span matSnackBarLabel>
+    {{this.data}}
+  </span>
+  <span matSnackBarActions>
+    <span style="cursor: pointer;" matSnackBarAction (click)="snackBarRef.dismissWithAction()">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </span>
+  </span>
+</div>
